@@ -113,7 +113,7 @@ By performing hyperparameter tuning and retraining the model multiple times, I s
 
 Replay Buffer Size | Batch Size | Starting Epsilon | Update Frequency | Gamma | Tau | Average Training Time | Episodes to Solve | Average Score at Convergence | Average Score | Plot |
 |------------------|--------------------|------------|------------------|------------------|-------|-----|-----------------------|-------------------|-----------------------------|-----|
-| int(1e5) | 128 | 1.0 | 8 | 0.99 | 1e-3 | 700.502 | 374 | 10.06 | 5.6 | ![Plot](plots/baseline_final.png) |
+| int(1e5) | 128 | 1.0 | 8 | 0.99 | 1e-3 | 1078.602 | 674 | 14.00 | 12.4 | ![Plot](plots/baseline_final.png) |
 
 
 
@@ -130,7 +130,7 @@ Replay Buffer Size | Batch Size | Starting Epsilon | Update Frequency | Gamma | 
 By pursuing these future ideas, I aim to further advance the performance and capabilities of the DQN agent in the Banana Environment.
 
 
---- End of Report ---
+
 
 
 
