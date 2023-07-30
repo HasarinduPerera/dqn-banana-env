@@ -97,17 +97,24 @@ During the initial training, the following hyperparameters were used:
 The following table summarizes the results from hyperparameter tuning:
 
 | Training Session | Replay Buffer Size | Batch Size | Starting Epsilon | Update Frequency | Gamma | Tau | Average Training Time | Episodes to Solve | Average Score at Convergence | Average Score | Plot |
-|------------------|--------------------|------------|------------------|------------------|-------|-----|-----------------------|-------------------|-----------------------------|
-| 1 | int(1e5) | 64 | 1.0 | 4 | 0.99 | 1e-3 | 766.229 | 356 | 10.01 | 1.4 | ![Plot](plots/baseline.png) |
-| 2 | int(1e4) | 128 | 1.0 | 8 | 0.99 | 1e-3 | 761.174 | 407 | 10.03 | 6.8 | ![Plot](plots/baseline.png) |
-| 3 | int(1e5) | 128 | 1.0 | 4 | 0.99 | 1e-3 | 718.573 | 307 | 10.00 | 4.4 | ![Plot](plots/baseline.png) |
-| 4 | int(1e6) | 256 | 1.0 | 4 | 0.99 | 1e-3 | 968.525 | 458 | 10.03 | 2.2 | ![Plot](plots/baseline.png) |
-| 5 | int(1e6) | 128 | 1.0 | 2 | 0.99 | 1e-3 | --- | 2000 | --- | --- | ![Plot](plots/baseline.png) |
-| 6 | int(1e5) | 128 | 1.0 | 8 | 0.99 | 1e-3 | 700.502 | 374 | 10.06 | 5.6 | ![Plot](plots/baseline.png) |
-| 7 | int(1e5) | 128 | 1.0 | 16 | 0.99 | 1e-3 | 775.411 | 526 | 10.07 | 5.6 | ![Plot](plots/baseline.png) |
+|------------------|--------------------|------------|------------------|------------------|-------|-----|-----------------------|-------------------|-----------------------------|-----|----|
+| 1 | int(1e5) | 64 | 1.0 | 4 | 0.99 | 1e-3 | 766.229 | 356 | 10.01 | 1.4 | ![Plot](plots/baseline_hype_1.png) |
+| 2 | int(1e4) | 128 | 1.0 | 8 | 0.99 | 1e-3 | 761.174 | 407 | 10.03 | 6.8 | ![Plot](plots/baseline_hype_2.png) |
+| 3 | int(1e5) | 128 | 1.0 | 4 | 0.99 | 1e-3 | 718.573 | 307 | 10.00 | 4.4 | ![Plot](plots/baseline_hype_3.png) |
+| 4 | int(1e6) | 256 | 1.0 | 4 | 0.99 | 1e-3 | 968.525 | 458 | 10.03 | 2.2 | ![Plot](plots/baseline_hype_4.png) |
+| 5 | int(1e6) | 128 | 1.0 | 2 | 0.99 | 1e-3 | --- | 2000 | --- | --- | ![Plot](plots/baseline_hype_5.png) |
+| 6 | int(1e5) | 128 | 1.0 | 8 | 0.99 | 1e-3 | 700.502 | 374 | 10.06 | 5.6 | ![Plot](plots/baseline_hype_6.png) |
+| 7 | int(1e5) | 128 | 1.0 | 16 | 0.99 | 1e-3 | 775.411 | 526 | 10.07 | 5.6 | ![Plot](plots/baseline_hype_7.png) |
 
 
-By performing hyperparameter tuning and retraining the model multiple times, I successfully improved the agent's performance in the Banana Environment. The chosen hyperparameters for the third training session resulted in the fastest training time and achieved the highest average score at convergence.
+By performing hyperparameter tuning and retraining the model multiple times, I successfully improved the agent's performance in the Banana Environment. The chosen hyperparameters for the sixth training session resulted in the fastest training time and achieved the highest average score at convergence.
+
+### Final Model
+
+Replay Buffer Size | Batch Size | Starting Epsilon | Update Frequency | Gamma | Tau | Average Training Time | Episodes to Solve | Average Score at Convergence | Average Score | Plot |
+|------------------|--------------------|------------|------------------|------------------|-------|-----|-----------------------|-------------------|-----------------------------|-----|
+| int(1e5) | 128 | 1.0 | 8 | 0.99 | 1e-3 | 700.502 | 374 | 10.06 | 5.6 | ![Plot](plots/baseline_final.png) |
+
 
 
 ## Ideas for Future Work

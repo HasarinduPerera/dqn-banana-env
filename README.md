@@ -1,6 +1,13 @@
-# Udacity DRL Nanodegree: Project 1 Navigation
+[//]: # (Image References)
+
+[image1]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
+
+
+# Project Name
 
 Welcome to the project repository! This README provides instructions on how to use this repository to train an agent to navigate and collect bananas in a large, square world.
+
+![Trained Agent][image1]
 
 ## Project Details
 
@@ -15,10 +22,6 @@ The state space has 37 dimensions and includes the agent's velocity and percepti
 
 The task is episodic, and to consider the environment solved, the agent must achieve an average score of +13 over 100 consecutive episodes.
 
-The project has been tested with Python 3.6.0 using the following dependencies:
-
-- PyTorch 1.4.0
-- Unityagents 0.4.0
 
 ## Getting Started
 
@@ -26,8 +29,8 @@ To get started with this repository, follow the instructions below to install th
 
 ### Prerequisites
 
-- Python 3.6.0
-- PyTorch 1.4.0
+- Python 3.6.13
+- PyTorch 0.4.0
 - Unityagents 0.4.0
 
 ### Installation
@@ -35,13 +38,13 @@ To get started with this repository, follow the instructions below to install th
 1. Clone the repository to your local machine using the following command:
 
    ```
-   git clone https://github.com/your-username/project-repo.git
+   git clone https://github.com/HasarinduPerera/drlnd-navigation-project
    ```
 
 2. Change into the project directory:
 
    ```
-   cd project-repo
+   cd drlnd-navigation-project
    ```
 
 3. Start the project without any additional work as the required environment, "Banana.app," is already uploaded in this project.
