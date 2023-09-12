@@ -3,7 +3,7 @@
 [image1]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
 
 
-# DRLND - Project 1: Navigation
+# DQN Banana Environment (Unity)
 
 Welcome to the project repository! This README provides instructions on how to use this repository to train an agent to navigate and collect bananas in a large, square world.
 
@@ -38,13 +38,13 @@ To get started with this repository, follow the instructions below to install th
 1. Clone the repository to your local machine using the following command:
 
    ```
-   git clone https://github.com/HasarinduPerera/drlnd-navigation-project
+   git clone https://github.com/HasarinduPerera/dqn-banana-env
    ```
 
 2. Change into the project directory:
 
    ```
-   cd drlnd-navigation-project
+   cd dqn-banana-env
    ```
 
 3. Start the project without any additional work as the required environment, "Banana.app," is already uploaded in this project.
